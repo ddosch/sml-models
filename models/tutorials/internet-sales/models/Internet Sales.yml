@@ -537,6 +537,19 @@ metrics:
   - unique_name: SoldProductNDC-Order Retail445-YTDPrevYear
     folder: Time Relative
 
+aggregates:
+
+  - unique_name: uda_tst
+    label: uda_tst
+    target_connection: Connection - Internet Sales
+    attributes:
+
+      - name: Product Line
+        dimension: Product Dimension
+        
+    metrics:
+      - customercount1
+
 drillthroughs:
 
   - unique_name: Customer Details
